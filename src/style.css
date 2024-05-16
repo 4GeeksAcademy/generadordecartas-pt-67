@@ -1,1 +1,123 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  height: 100vh;
+  background-color: green;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+video {
+  margin: 0;
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  z-index: -2;
+  object-fit: cover;
+}
+
+.contenedor {
+  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.contador {
+  font-weight: bold;
+  font-size: 40px;
+  padding: 10px 150px 10px 150px;
+  background-image: url(https://i.pinimg.com/originals/96/dc/58/96dc58bf59e10d75b45957dcace49547.gif);
+  color: red;
+  text-align: center;
+  margin-bottom: 0;
+  border-radius: 20px;
+  border: none;
+  background-size: cover;
+}
+
+.card {
+  width: 400px;
+  /* Ancho inicial */
+  height: 500px;
+  /* Alto inicial */
+  position: relative;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: rgb(255, 255, 255);
+  box-shadow: rgba(255, 255, 255, 0.07) 0px 1px 2px,
+    rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
+    rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px,
+    rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  border-width: 3px;
+}
+
+.card-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.size-slider label {
+  color: white;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 25px;
+  z-index: 2;
+}
+
+.boton {
+  margin-top: 20px;
+}
+
+.boton button {
+  font-weight: bold;
+  border-radius: 100%;
+
+  padding: 30px 50px 30px 50px;
+  cursor: pointer;
+  box-shadow: 0px 5px 20px 0px;
+
+  background-repeat: no-repeat;
+  border-width: 5px;
+}
+
+.top-suit.heart,
+.bottom-suit.heart,
+.top-suit.diamond,
+.bottom-suit.diamond {
+  color: red;
+}
+
+.top-suit,
+.bottom-suit {
+  position: absolute;
+}
+
+.top-suit {
+  top: 18px;
+  left: 18px;
+  font-size: 100px;
+}
+
+.bottom-suit {
+  bottom: 18px;
+  right: 18px;
+  transform: rotate(180deg);
+  font-size: 100px;
+}
+
+.number {
+  font-size: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Hello Rigo with Vanilla.js</title>
     <link
       rel="stylesheet"
@@ -12,18 +13,50 @@
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
+
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <video
+      muted
+      autoplay
+      loop
+      src="https://cdn.pixabay.com/video/2021/10/07/91260-628462870_large.mp4"
+      type="video/mp4"
+    ></video>
+    <div class="contenedor">
+      <div class="contador" id="contador">00:10</div>
+      <div class="card">
+        <span class="top-suit">♠</span>
+        <span class="number">7</span>
+        <span class="bottom-suit">♠</span>
+      </div>
+      <div class="card-controls">
+        <div class="size-slider">
+          <label for="ancho">Ancho:</label>
+          <input
+            type="range"
+            id="ancho"
+            min="300"
+            max="600"
+            value="400"
+            step="10"
+          />
+        </div>
+        <div class="size-slider">
+          <label for="alto">Alto:</label>
+          <input
+            type="range"
+            id="alto"
+            min="300"
+            max="600"
+            value="500"
+            step="10"
+          />
+        </div>
+        <div class="boton">
+          <button id="boton"></button>
+        </div>
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
