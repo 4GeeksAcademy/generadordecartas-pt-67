@@ -18,7 +18,7 @@ video {
   object-fit: cover;
 }
 
-.contenedor {
+.container {
   padding-top: 35px;
   display: flex;
   flex-direction: column;
@@ -26,7 +26,7 @@ video {
   z-index: 2;
 }
 
-.contador {
+.counter {
   font-weight: bold;
   font-size: 40px;
   padding: 10px 150px 10px 150px;
@@ -37,6 +37,7 @@ video {
   border-radius: 20px;
   border: none;
   background-size: cover;
+  z-index: -2;
 }
 
 .card {
@@ -73,27 +74,32 @@ video {
   z-index: 2;
 }
 
-.boton {
+.button {
   margin-top: 20px;
 }
 
-.boton button {
-  font-weight: bold;
-  border-radius: 100%;
-
-  padding: 30px 50px 30px 50px;
-  cursor: pointer;
-  box-shadow: 0px 5px 20px 0px;
-
+#button {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/683/683905.png);
+  background-size: 70px;
+  background-position: center;
   background-repeat: no-repeat;
-  border-width: 5px;
+  display: inline-block;
+  padding: 40px 70px;
+  font-size: 40px;
+  color: white;
+  background-color: #0045f2;
+  border: none;
+  border-radius: 100%;
+  box-shadow: 0 6px #3a96e7;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-.top-suit.heart,
-.bottom-suit.heart,
-.top-suit.diamond,
-.bottom-suit.diamond {
-  color: red;
+#button:active {
+  box-shadow: 0 3px#0045f2;
+  transform: translateY(3px);
 }
 
 .top-suit,
@@ -102,22 +108,25 @@ video {
 }
 
 .top-suit {
-  top: 18px;
+  top: 10px;
   left: 18px;
-  font-size: 100px;
+  font-size: 130px;
+  padding: 0;
 }
 
 .bottom-suit {
   bottom: 18px;
   right: 18px;
   transform: rotate(180deg);
-  font-size: 100px;
+  font-size: 130px;
+  padding: 0;
 }
 
 .number {
-  font-size: 200px;
+  font-size: 120px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 0;
 }

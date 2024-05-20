@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Random Card Generator</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -22,8 +22,8 @@
       src="https://cdn.pixabay.com/video/2021/10/07/91260-628462870_large.mp4"
       type="video/mp4"
     ></video>
-    <div class="contenedor">
-      <div class="contador" id="contador">00:10</div>
+    <div class="container">
+      <div class="counter" id="counter">00:10</div>
       <div class="card">
         <span class="top-suit">♠</span>
         <span class="number">7</span>
@@ -31,10 +31,10 @@
       </div>
       <div class="card-controls">
         <div class="size-slider">
-          <label for="ancho">Ancho:</label>
+          <label for="width">width:</label>
           <input
             type="range"
-            id="ancho"
+            id="width"
             min="300"
             max="600"
             value="400"
@@ -42,18 +42,18 @@
           />
         </div>
         <div class="size-slider">
-          <label for="alto">Alto:</label>
+          <label for="height">height:</label>
           <input
             type="range"
-            id="alto"
-            min="300"
+            id="height"
+            min="350"
             max="600"
             value="500"
             step="10"
           />
         </div>
-        <div class="boton">
-          <button id="boton"></button>
+        <div class="button">
+          <button id="button"></button>
         </div>
       </div>
     </div>
