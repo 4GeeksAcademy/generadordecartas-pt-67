@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     return `
    
-            <span class="top-suit">${suitsRandom}</span>
-            <span class="bottom-suit">${suitsRandom}</span>
+            <span class="top-suit ${suitsRandom}">${suitsRandom}</span>
+            <span class="bottom-suit ${suitsRandom}">${suitsRandom}</span>
             <span class="number">${numbersRandom}</span>
         `;
   }
