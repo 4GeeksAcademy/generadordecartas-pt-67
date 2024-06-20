@@ -38,6 +38,7 @@ video {
   border: none;
   background-size: cover;
   z-index: -2;
+  margin-bottom: 15px;
 }
 
 .card {
